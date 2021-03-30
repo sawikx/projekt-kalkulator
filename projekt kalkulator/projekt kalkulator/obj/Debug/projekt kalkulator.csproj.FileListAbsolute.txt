@@ -1,0 +1,9 @@
+C:\Users\szef\Desktop\moje dokumenty\github\c#\projekt kalkulator\projekt kalkulator\bin\Debug\projekt kalkulator.exe.config
+C:\Users\szef\Desktop\moje dokumenty\github\c#\projekt kalkulator\projekt kalkulator\bin\Debug\projekt kalkulator.exe
+C:\Users\szef\Desktop\moje dokumenty\github\c#\projekt kalkulator\projekt kalkulator\bin\Debug\projekt kalkulator.pdb
+C:\Users\szef\Desktop\moje dokumenty\github\c#\projekt kalkulator\projekt kalkulator\obj\Debug\projekt kalkulator.csprojAssemblyReference.cache
+C:\Users\szef\Desktop\moje dokumenty\github\c#\projekt kalkulator\projekt kalkulator\obj\Debug\projekt_kalkulator.Properties.Resources.resources
+C:\Users\szef\Desktop\moje dokumenty\github\c#\projekt kalkulator\projekt kalkulator\obj\Debug\projekt kalkulator.csproj.GenerateResource.cache
+C:\Users\szef\Desktop\moje dokumenty\github\c#\projekt kalkulator\projekt kalkulator\obj\Debug\projekt kalkulator.csproj.CoreCompileInputs.cache
+C:\Users\szef\Desktop\moje dokumenty\github\c#\projekt kalkulator\projekt kalkulator\obj\Debug\projekt kalkulator.exe
+C:\Users\szef\Desktop\moje dokumenty\github\c#\projekt kalkulator\projekt kalkulator\obj\Debug\projekt kalkulator.pdb
