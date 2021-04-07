@@ -23,14 +23,26 @@ namespace projekt_kalkulator
         private void start_Click(object sender, EventArgs e)
         {
             Close();
-            th = new Thread(openform);
+            th = new Thread(openkalkurator);
             th.SetApartmentState(ApartmentState.STA);
             th.Start();
         }
 
-        private void openform(object obj)
+        private void openkalkurator(object obj)
         {
             Application.Run(new kalkurator());
+        }
+        private void opengeometriapl(object obj)
+        {
+            Application.Run(new Geometriapl());
+        }
+
+        private void Geometriapl_Click(object sender, EventArgs e)
+        {
+            Close();
+            th = new Thread(opengeometriapl);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
         }
     }
 }

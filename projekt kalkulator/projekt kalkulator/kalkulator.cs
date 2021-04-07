@@ -7,12 +7,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace projekt_kalkulator
 {
 
     public partial class kalkurator : Form
     {
+        Thread th;
+        private void Wyjscie_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+        private void Powrot_Click(object sender, EventArgs e)
+        {
+            Close();
+            th = new Thread(menu);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+        }
+        private void menu(object obj)
+        {
+            Application.Run(new aplikacjimenu());
+        }
         public double ruwna(double a, double b, string c)
         {
             switch (c)

@@ -7,3 +7,6 @@ C:\Users\szef\Desktop\moje dokumenty\github\c#\projekt kalkulator\projekt kalkul
 C:\Users\szef\Desktop\moje dokumenty\github\c#\projekt kalkulator\projekt kalkulator\obj\Debug\projekt kalkulator.csproj.CoreCompileInputs.cache
 C:\Users\szef\Desktop\moje dokumenty\github\c#\projekt kalkulator\projekt kalkulator\obj\Debug\projekt kalkulator.exe
 C:\Users\szef\Desktop\moje dokumenty\github\c#\projekt kalkulator\projekt kalkulator\obj\Debug\projekt kalkulator.pdb
+C:\Users\szef\Desktop\moje dokumenty\github\c#\projekt kalkulator\projekt kalkulator\obj\Debug\projekt_kalkulator.aplikacjimenu.resources
+C:\Users\szef\Desktop\moje dokumenty\github\c#\projekt kalkulator\projekt kalkulator\obj\Debug\projekt_kalkulator.Geometriapl.resources
+C:\Users\szef\Desktop\moje dokumenty\github\c#\projekt kalkulator\projekt kalkulator\obj\Debug\projekt_kalkulator.kalkurator.resources

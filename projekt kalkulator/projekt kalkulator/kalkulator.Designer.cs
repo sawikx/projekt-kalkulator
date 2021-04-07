@@ -56,6 +56,8 @@
             this.przecinek = new System.Windows.Forms.Button();
             this.równa = new System.Windows.Forms.Button();
             this.komentarz = new System.Windows.Forms.Label();
+            this.wyjscie = new System.Windows.Forms.Button();
+            this.powrot = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // n7
@@ -338,11 +340,33 @@
             this.komentarz.Size = new System.Drawing.Size(10, 13);
             this.komentarz.TabIndex = 27;
             // 
+            // wyjscie
+            // 
+            this.wyjscie.Location = new System.Drawing.Point(203, 415);
+            this.wyjscie.Name = "wyjscie";
+            this.wyjscie.Size = new System.Drawing.Size(75, 23);
+            this.wyjscie.TabIndex = 28;
+            this.wyjscie.Text = "Wyjście";
+            this.wyjscie.UseVisualStyleBackColor = true;
+            this.wyjscie.Click += new System.EventHandler(this.Wyjscie_Click);
+            // 
+            // powrot
+            // 
+            this.powrot.Location = new System.Drawing.Point(203, 386);
+            this.powrot.Name = "powrot";
+            this.powrot.Size = new System.Drawing.Size(75, 23);
+            this.powrot.TabIndex = 29;
+            this.powrot.Text = "Powrót";
+            this.powrot.UseVisualStyleBackColor = true;
+            this.powrot.Click += new System.EventHandler(this.Powrot_Click);
+            // 
             // kalkurator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.powrot);
+            this.Controls.Add(this.wyjscie);
             this.Controls.Add(this.komentarz);
             this.Controls.Add(this.równa);
             this.Controls.Add(this.przecinek);
@@ -409,5 +433,7 @@
         private System.Windows.Forms.Button przecinek;
         private System.Windows.Forms.Button równa;
         private System.Windows.Forms.Label komentarz;
+        private System.Windows.Forms.Button wyjscie;
+        private System.Windows.Forms.Button powrot;
     }
 }
