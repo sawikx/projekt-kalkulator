@@ -52,6 +52,12 @@
     <Compile Include="aplikacjimenu.Designer.cs">
       <DependentUpon>aplikacjimenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="delta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delta.Designer.cs">
+      <DependentUpon>delta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Geometriapl.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="aplikacjimenu.resx">
       <DependentUpon>aplikacjimenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delta.resx">
+      <DependentUpon>delta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Geometriapl.resx">
       <DependentUpon>Geometriapl.cs</DependentUpon>

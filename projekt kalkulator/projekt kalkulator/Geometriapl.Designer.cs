@@ -77,9 +77,10 @@
             this.obraz = new System.Windows.Forms.PictureBox();
             this.or = new System.Windows.Forms.Label();
             this.opi = new System.Windows.Forms.Label();
-            this.danepi = new System.Windows.Forms.NumericUpDown();
+            this.piwpis = new System.Windows.Forms.Label();
+            this.piprawo = new System.Windows.Forms.Button();
+            this.pilewo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.obraz)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.danepi)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -527,48 +528,49 @@
             // opi
             // 
             this.opi.AutoSize = true;
-            this.opi.Location = new System.Drawing.Point(353, 295);
+            this.opi.Location = new System.Drawing.Point(311, 295);
             this.opi.Name = "opi";
-            this.opi.Size = new System.Drawing.Size(16, 13);
+            this.opi.Size = new System.Drawing.Size(115, 13);
             this.opi.TabIndex = 52;
-            this.opi.Text = "Pi";
+            this.opi.Text = "Pi (wybór dokładnośći)";
             // 
-            // danepi
+            // piwpis
             // 
-            this.danepi.DecimalPlaces = 10;
-            this.danepi.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            65536});
-            this.danepi.Location = new System.Drawing.Point(313, 311);
-            this.danepi.Maximum = new decimal(new int[] {
-            1351155463,
-            7,
-            0,
-            655360});
-            this.danepi.Minimum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.danepi.Name = "danepi";
-            this.danepi.Size = new System.Drawing.Size(120, 20);
-            this.danepi.TabIndex = 53;
-            this.danepi.Value = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.danepi.ValueChanged += new System.EventHandler(this.danepi_ValueChanged);
-            this.danepi.Click += new System.EventHandler(this.danepi_Click);
+            this.piwpis.AutoSize = true;
+            this.piwpis.Location = new System.Drawing.Point(320, 314);
+            this.piwpis.Name = "piwpis";
+            this.piwpis.Size = new System.Drawing.Size(28, 13);
+            this.piwpis.TabIndex = 53;
+            this.piwpis.Text = "3.14";
+            // 
+            // piprawo
+            // 
+            this.piprawo.Location = new System.Drawing.Point(404, 309);
+            this.piprawo.Name = "piprawo";
+            this.piprawo.Size = new System.Drawing.Size(29, 23);
+            this.piprawo.TabIndex = 54;
+            this.piprawo.Text = "->";
+            this.piprawo.UseVisualStyleBackColor = true;
+            this.piprawo.Click += new System.EventHandler(this.piprawo_Click);
+            // 
+            // pilewo
+            // 
+            this.pilewo.Location = new System.Drawing.Point(285, 308);
+            this.pilewo.Name = "pilewo";
+            this.pilewo.Size = new System.Drawing.Size(29, 23);
+            this.pilewo.TabIndex = 55;
+            this.pilewo.Text = "<-";
+            this.pilewo.UseVisualStyleBackColor = true;
+            this.pilewo.Click += new System.EventHandler(this.pilewo_Click);
             // 
             // Geometriapl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(808, 486);
-            this.Controls.Add(this.danepi);
+            this.Controls.Add(this.pilewo);
+            this.Controls.Add(this.piprawo);
+            this.Controls.Add(this.piwpis);
             this.Controls.Add(this.opi);
             this.Controls.Add(this.or);
             this.Controls.Add(this.daned);
@@ -621,7 +623,6 @@
             this.Name = "Geometriapl";
             this.Text = "Geometriapl";
             ((System.ComponentModel.ISupportInitialize)(this.obraz)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.danepi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -678,6 +679,8 @@
         private System.Windows.Forms.TextBox daned;
         private System.Windows.Forms.Label or;
         private System.Windows.Forms.Label opi;
-        private System.Windows.Forms.NumericUpDown danepi;
+        private System.Windows.Forms.Label piwpis;
+        private System.Windows.Forms.Button piprawo;
+        private System.Windows.Forms.Button pilewo;
     }
 }

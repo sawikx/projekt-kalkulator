@@ -33,6 +33,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.Geometriapl = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.delta = new System.Windows.Forms.Button();
+            this.wyjscie = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -83,11 +86,43 @@
             this.Geometriapl.UseVisualStyleBackColor = true;
             this.Geometriapl.Click += new System.EventHandler(this.Geometriapl_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(243, 156);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(16, 13);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "3.";
+            // 
+            // delta
+            // 
+            this.delta.Location = new System.Drawing.Point(265, 151);
+            this.delta.Name = "delta";
+            this.delta.Size = new System.Drawing.Size(75, 23);
+            this.delta.TabIndex = 6;
+            this.delta.Text = "Delta";
+            this.delta.UseVisualStyleBackColor = true;
+            this.delta.Click += new System.EventHandler(this.delta_Click);
+            // 
+            // wyjscie
+            // 
+            this.wyjscie.Location = new System.Drawing.Point(265, 415);
+            this.wyjscie.Name = "wyjscie";
+            this.wyjscie.Size = new System.Drawing.Size(75, 23);
+            this.wyjscie.TabIndex = 7;
+            this.wyjscie.Text = "Wyjście";
+            this.wyjscie.UseVisualStyleBackColor = true;
+            this.wyjscie.Click += new System.EventHandler(this.wyjscie_Click);
+            // 
             // aplikacjimenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.wyjscie);
+            this.Controls.Add(this.delta);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.Geometriapl);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -107,5 +142,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button Geometriapl;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button delta;
+        private System.Windows.Forms.Button wyjscie;
     }
 }

@@ -10,3 +10,4 @@ C:\Users\szef\Desktop\moje dokumenty\github\c#\projekt kalkulator\projekt kalkul
 C:\Users\szef\Desktop\moje dokumenty\github\c#\projekt kalkulator\projekt kalkulator\obj\Debug\projekt_kalkulator.aplikacjimenu.resources
 C:\Users\szef\Desktop\moje dokumenty\github\c#\projekt kalkulator\projekt kalkulator\obj\Debug\projekt_kalkulator.Geometriapl.resources
 C:\Users\szef\Desktop\moje dokumenty\github\c#\projekt kalkulator\projekt kalkulator\obj\Debug\projekt_kalkulator.kalkurator.resources
+C:\Users\szef\Desktop\moje dokumenty\github\c#\projekt kalkulator\projekt kalkulator\obj\Debug\projekt_kalkulator.delta.resources

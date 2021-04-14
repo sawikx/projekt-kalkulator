@@ -14,7 +14,10 @@ namespace projekt_kalkulator
     public partial class Geometriapl : Form
     {
         Thread th;
-        int jakafigura=0;
+        int jakafigura = 0;
+        int longpi = 3;
+        //3.14159265359
+        double[] tabpi = new double[] {0,3,3.1,3.14, 3.141, 3.1415, 3.14159, 3.141592, 3.1415926, 3.14159265, 3.141592653, 3.1415926535, 3.14159265359 }  ; 
         private void Wyjscie_Click(object sender, EventArgs e)
         {
             Close();
@@ -63,7 +66,9 @@ namespace projekt_kalkulator
             od2.Visible = false;
             or.Visible = false;
             opi.Visible = false;
-            danepi.Visible = false;
+            pilewo.Visible = false;
+            piprawo.Visible = false;
+            piwpis.Visible = false;
 
         }
         public Geometriapl()
@@ -281,7 +286,43 @@ namespace projekt_kalkulator
                             wynikpole1.Text = wynik + "";
                             wynikpole1.Visible = true;
                         }
-                        break;
+                break;
+                case 7:
+                    a = int.Parse(danea.Text);//R
+                    if (longpi > 0)
+                    {
+                        wynik =  (a* a) * tabpi[longpi];
+                        if (a <= 0)
+                        {
+                                eror.Visible = true;
+                                wynikpole1.Visible = false;
+                                eror.Text = "Podaj dodatnią liczbę w R";
+                            }
+                        else
+                        {
+                                eror.Visible = false;
+                                wynikpole1.Text = wynik + "";
+                                wynikpole1.Visible = true;
+                            }
+                    }
+                    else
+                    {
+                        wynik = a * a;
+                        if (a <= 0)
+                        {
+                                eror.Visible = true;
+                                wynikpole1.Visible = false;
+                                eror.Text = "Podaj dodatnią liczbę w R";
+                            }
+                        else
+                        {
+                                eror.Visible = false;
+                                wynikpole1.Text = wynik + "Pi";
+                                wynikpole1.Visible = true;
+                            }
+
+                    }
+                 break;
                 }
             }
             catch (Exception)
@@ -309,14 +350,14 @@ namespace projekt_kalkulator
                         {
                             eror.Visible = true;
                             wynikobwod.Visible = false;
-                           eror.Text = "Podaj dodatnie liczby";
+                            eror.Text = "Podaj dodatnie liczby";
                         }
                         else
                         {
                             eror.Visible = false;
                             wynikobwod.Text = wynik + "";
                             wynikobwod.Visible = true;
-                        } 
+                        }
                         break;
                     case 2:
                     case 4:
@@ -361,7 +402,7 @@ namespace projekt_kalkulator
                         b = int.Parse(daneb.Text);
                         c = int.Parse(danec.Text);
                         d = int.Parse(daned.Text);
-                        wynik = a+b+c+d;
+                        wynik = a + b + c + d;
 
                         if (a <= 0 || b <= 0)
                         {
@@ -377,7 +418,40 @@ namespace projekt_kalkulator
                         }
                         break;
                     case 7:
-
+                        a = int.Parse(danea.Text);//R
+                        if (longpi > 0)
+                        {
+                            wynik = 2 * a * tabpi[longpi];
+                            if (a <= 0)
+                            {
+                                wynikobwod.Visible = false;
+                                eror.Visible = true;
+                                eror.Text = "Podaj dodatnią liczbe w R";
+                            }
+                            else
+                            {
+                                eror.Visible = false;
+                                wynikobwod.Text = wynik + "";
+                                wynikobwod.Visible = true;
+                            }
+                        }
+                        else
+                        {
+                            wynik = 2 * a;
+                            if (a <= 0)
+                            {
+                                wynikobwod.Visible = false;
+                                eror.Visible = true;
+                                eror.Text = "Podaj dodatnią liczbe w R";
+                            }
+                            else
+                            {
+                                eror.Visible = false;
+                                wynikobwod.Text = wynik + "Pi";
+                                wynikobwod.Visible = true;
+                            }
+                            
+                        }
                         break;
                 }
             }
@@ -506,9 +580,12 @@ namespace projekt_kalkulator
             obraz.Image = Properties.Resources.koło;
 
             Pole.Visible = true;
-            danepi.Visible = true;
+            pilewo.Visible = true;
+            piprawo.Visible = true;
+            piwpis.Visible = true;
+            piwpis.Text = "3.14";
             or.Visible = true;
-            daneh.Visible = true;
+            danea.Visible = true;
             opi.Visible = true;
             obwod.Visible = true;
             jakafigura = 7;
@@ -521,6 +598,35 @@ namespace projekt_kalkulator
             wzory.Visible = true;
             wzor1.Text = @"Pi*(r*r)";
             wzor1.Visible = true;
+        }
+
+        private void piprawo_Click(object sender, EventArgs e)
+        {
+
+            if (tabpi.Length - 1 == longpi)
+            {
+                piwpis.Text = "" + tabpi[longpi];
+            }
+            else
+            {
+                longpi += 1;
+                piwpis.Text = "" + tabpi[longpi];
+            }
+        }
+
+        private void pilewo_Click(object sender, EventArgs e)
+        {
+            if (0 == longpi - 1)
+            {
+                piwpis.Text = "pi";
+                longpi -= 1;
+            }
+            else
+            {
+                longpi -= 1;
+                piwpis.Text = "" + tabpi[longpi];
+            }
+
         }
 
 
@@ -556,84 +662,6 @@ namespace projekt_kalkulator
         private void or_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void danepi_ValueChanged(object sender, EventArgs e)
-        {
-            
-        }
-        
-        //3,1415926535
-        private void danepi_Click(object sender, EventArgs e)
-        {
-            decimal zwiększanie;
-            double dod;
-            if (danepi.Value == (decimal)3.0000000000)
-            {
-                dod = 0.1;
-                zwiększanie = (decimal)dod;
-                danepi.Increment = zwiększanie;
-            }
-            else if (danepi.Value == (decimal)3.1000000000)
-            {
-                dod = 0.04;
-                zwiększanie = (decimal)dod;
-                danepi.Increment = zwiększanie;
-            }
-            else if (danepi.Value == (decimal)3.1400000000)
-            {
-                dod = 0.001;
-                zwiększanie = (decimal)dod;
-                danepi.Increment = zwiększanie;
-            }
-            else if (danepi.Value == (decimal)3.1410000000)
-            {
-                dod = 0.0005;
-                zwiększanie = (decimal)dod;
-                danepi.Increment = zwiększanie;
-            }
-            else if (danepi.Value == (decimal)3.1415000000)
-            {
-                dod = 0.00009;
-                zwiększanie = (decimal)dod;
-                danepi.Increment = zwiększanie;
-            }
-            else if (danepi.Value == (decimal)3.1415900000)
-            {
-                dod = 0.000002;
-                zwiększanie = (decimal)dod;
-                danepi.Increment = zwiększanie;
-            }
-            else if (danepi.Value == (decimal)3.1415920000)
-            {
-                dod = 0.0000006;
-                zwiększanie = (decimal)dod;
-                danepi.Increment = zwiększanie;
-            }
-            else if (danepi.Value == (decimal)3.1415926000)
-            {
-                dod = 0.00000005;
-                zwiększanie = (decimal)dod;
-                danepi.Increment = zwiększanie;
-            }
-            else if (danepi.Value == (decimal)3.1415926500)
-            {
-                dod = 0.000000003;
-                zwiększanie = (decimal)dod;
-                danepi.Increment = zwiększanie;
-            }
-            else if (danepi.Value == (decimal)3.1415926530)
-            {
-                dod = 0.0000000005;
-                zwiększanie = (decimal)dod;
-                danepi.Increment = zwiększanie;
-            }
-            else if (danepi.Value == (decimal)3.1415926535)
-            {
-                dod = 0.0000000005;
-                zwiększanie = (decimal)dod;
-                danepi.Increment = zwiększanie;
-            }
-        }
+        }      
     }
 }

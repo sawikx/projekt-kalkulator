@@ -36,13 +36,29 @@ namespace projekt_kalkulator
         {
             Application.Run(new Geometriapl());
         }
-
+        private void Delta(object obj)
+        {
+            Application.Run(new delta());
+        }
         private void Geometriapl_Click(object sender, EventArgs e)
         {
             Close();
             th = new Thread(opengeometriapl);
             th.SetApartmentState(ApartmentState.STA);
             th.Start();
+        }
+
+        private void delta_Click(object sender, EventArgs e)
+        {
+            Close();
+            th = new Thread(Delta);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+        }
+
+        private void wyjscie_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
