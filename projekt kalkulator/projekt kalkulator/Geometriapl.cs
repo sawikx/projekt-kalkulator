@@ -629,39 +629,5 @@ namespace projekt_kalkulator
 
         }
 
-
-        private void d1napis_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void polepokaz_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click_1(object sender, EventArgs e)
-        {
-
-        }
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void or_Click(object sender, EventArgs e)
-        {
-
-        }      
     }
 }

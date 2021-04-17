@@ -157,7 +157,6 @@
             this.label5.Size = new System.Drawing.Size(16, 13);
             this.label5.TabIndex = 7;
             this.label5.Text = "4.";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // Romb
             // 
@@ -338,7 +337,6 @@
             this.polepokaz.Size = new System.Drawing.Size(34, 13);
             this.polepokaz.TabIndex = 32;
             this.polepokaz.Text = "Pole :";
-            this.polepokaz.Click += new System.EventHandler(this.polepokaz_Click);
             // 
             // eror
             // 
@@ -404,7 +402,6 @@
             this.od1.Size = new System.Drawing.Size(21, 13);
             this.od1.TabIndex = 39;
             this.od1.Text = "D1";
-            this.od1.Click += new System.EventHandler(this.d1napis_Click);
             // 
             // od2
             // 
@@ -432,7 +429,6 @@
             this.wzor3.Size = new System.Drawing.Size(35, 13);
             this.wzor3.TabIndex = 42;
             this.wzor3.Text = "wzór3";
-            this.wzor3.Click += new System.EventHandler(this.label10_Click);
             // 
             // wzor1
             // 
@@ -442,7 +438,6 @@
             this.wzor1.Size = new System.Drawing.Size(35, 13);
             this.wzor1.TabIndex = 43;
             this.wzor1.Text = "wzór1";
-            this.wzor1.Click += new System.EventHandler(this.label9_Click);
             // 
             // wynikpole2
             // 
@@ -452,7 +447,6 @@
             this.wynikpole2.Size = new System.Drawing.Size(40, 13);
             this.wynikpole2.TabIndex = 44;
             this.wynikpole2.Text = "wynik2";
-            this.wynikpole2.Click += new System.EventHandler(this.label9_Click_1);
             // 
             // wynikpole3
             // 
@@ -523,7 +517,6 @@
             this.or.Size = new System.Drawing.Size(15, 13);
             this.or.TabIndex = 51;
             this.or.Text = "R";
-            this.or.Click += new System.EventHandler(this.or_Click);
             // 
             // opi
             // 
