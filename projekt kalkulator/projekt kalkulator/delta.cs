@@ -22,6 +22,9 @@ namespace projekt_kalkulator
             x1dulliczby.Visible = false;
             x1kreska.Visible = false;
             x1wynik.Visible = false;
+            x1wynik2c.Visible = false;
+            x1wynik2a.Visible = false;
+            x1wynik2b.Visible = false;
 
             x2napis.Visible = false;
             x2poczatek.Visible = false;
@@ -30,6 +33,9 @@ namespace projekt_kalkulator
             x2kreska.Visible = false;
             x2dulliczba.Visible = false;
             x2wynik.Visible = false;
+            x2wynik2c.Visible = false;
+            x2wynik2a.Visible = false;
+            x2wynik2b.Visible = false;
         }
         Thread th;
         public delta()
@@ -67,7 +73,7 @@ namespace projekt_kalkulator
 
         private void start1_Click(object sender, EventArgs e)
         {
-            double a=0, b=0, c=0, deltaliczba,x1,x2;
+            double a=0, b=0, c=0, deltaliczba,pierwistekdelta,x1,x2;
             erro1.Visible = false;
             try
             {
@@ -91,7 +97,7 @@ namespace projekt_kalkulator
                     x1dulliczby.Visible = true;
                     x1kreska.Visible = true;
                     x1wynik.Visible = true;
-                    x1guraliczby.Text = "−b−vΔ";
+                    x1guraliczby.Text = "−b−√Δ";
                     x1napis.Text = "x1";
 
                     x2napis.Visible = true;
@@ -101,13 +107,38 @@ namespace projekt_kalkulator
                     x2kreska.Visible = true;
                     x2dulliczba.Visible = true;
                     x2wynik.Visible = true;
+                    pierwistekdelta = Math.Sqrt(deltaliczba);
+                    x1 = (-b - pierwistekdelta) / (2 * a);
+                    x2 = (-b + pierwistekdelta) / (2 * a);
+                    if (Math.Ceiling(pierwistekdelta) == pierwistekdelta)
+                    {
+                        x1wynik.Visible = true;
+                        x1wynik2a.Visible = false;
+                        x1wynik2c.Visible = false;
+                        x1wynik2b.Visible = false;
+                        x1wynik.Text = "" + x1;
 
-                    x1 = (-b - Math.Sqrt(deltaliczba)) / (2 * a);
-                    x2 = (-b + Math.Sqrt(deltaliczba)) / (2 * a);
-
-                    x1wynik.Text = "" + x1;
-                    x2wynik.Text = "" + x2;
-
+                        x2wynik.Visible = true;
+                        x2wynik2a.Visible = false;
+                        x2wynik2c.Visible = false;
+                        x2wynik2b.Visible = false;
+                        x2wynik.Text = "" + x2;
+                    }
+                    else
+                    {
+                        x1wynik.Visible = false;
+                        x1wynik2a.Visible = true;
+                        x1wynik2c.Visible = true;
+                        x1wynik2b.Visible = true;
+                        x1wynik2a.Text = "-" + b + " - √" + deltaliczba ;
+                        x1wynik2b.Text = "2a";
+                        x2wynik.Visible = false;
+                        x2wynik2a.Visible = true;
+                        x2wynik2c.Visible = true;
+                        x2wynik2b.Visible = true;
+                        x2wynik2a.Text = "-" + b + " + √" + deltaliczba;
+                        x2wynik2b.Text = "2a";
+                    }
                 }
                 else if (deltaliczba == 0)
                 {
@@ -126,7 +157,7 @@ namespace projekt_kalkulator
                 }
                 else
                 {
-                    
+                    niewidzi();
                     x1napis.Visible = true;
                     x1napis.Text = "Delta ujemna -> Równanie kwadratowe nie ma rozwiązań ";
                 }

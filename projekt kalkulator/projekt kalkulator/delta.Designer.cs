@@ -63,6 +63,12 @@
             this.x2dwa = new System.Windows.Forms.Label();
             this.x1wynik = new System.Windows.Forms.Label();
             this.x2wynik = new System.Windows.Forms.Label();
+            this.x1wynik2c = new System.Windows.Forms.Label();
+            this.x1wynik2b = new System.Windows.Forms.Label();
+            this.x1wynik2a = new System.Windows.Forms.Label();
+            this.x2wynik2a = new System.Windows.Forms.Label();
+            this.x2wynik2c = new System.Windows.Forms.Label();
+            this.x2wynik2b = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // powrut
@@ -320,9 +326,9 @@
             this.x1guraliczby.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.x1guraliczby.Location = new System.Drawing.Point(339, 260);
             this.x1guraliczby.Name = "x1guraliczby";
-            this.x1guraliczby.Size = new System.Drawing.Size(40, 15);
+            this.x1guraliczby.Size = new System.Drawing.Size(42, 15);
             this.x1guraliczby.TabIndex = 31;
-            this.x1guraliczby.Text = "−b−vΔ";
+            this.x1guraliczby.Text = "−b−√Δ";
             // 
             // x2guraliczba
             // 
@@ -331,9 +337,9 @@
             this.x2guraliczba.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.x2guraliczba.Location = new System.Drawing.Point(341, 307);
             this.x2guraliczba.Name = "x2guraliczba";
-            this.x2guraliczba.Size = new System.Drawing.Size(40, 15);
+            this.x2guraliczba.Size = new System.Drawing.Size(42, 15);
             this.x2guraliczba.TabIndex = 35;
-            this.x2guraliczba.Text = "−b+vΔ";
+            this.x2guraliczba.Text = "−b+√Δ";
             // 
             // x2kreska
             // 
@@ -407,11 +413,79 @@
             this.x2wynik.TabIndex = 39;
             this.x2wynik.Text = "wynikx2";
             // 
+            // x1wynik2c
+            // 
+            this.x1wynik2c.BackColor = System.Drawing.Color.Transparent;
+            this.x1wynik2c.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.x1wynik2c.Location = new System.Drawing.Point(411, 262);
+            this.x1wynik2c.Name = "x1wynik2c";
+            this.x1wynik2c.Size = new System.Drawing.Size(56, 18);
+            this.x1wynik2c.TabIndex = 41;
+            this.x1wynik2c.Text = "_______";
+            this.x1wynik2c.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // x1wynik2b
+            // 
+            this.x1wynik2b.AutoSize = true;
+            this.x1wynik2b.BackColor = System.Drawing.Color.Transparent;
+            this.x1wynik2b.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.x1wynik2b.Location = new System.Drawing.Point(411, 279);
+            this.x1wynik2b.Name = "x1wynik2b";
+            this.x1wynik2b.Size = new System.Drawing.Size(21, 15);
+            this.x1wynik2b.TabIndex = 40;
+            this.x1wynik2b.Text = "2a";
+            // 
+            // x1wynik2a
+            // 
+            this.x1wynik2a.AutoSize = true;
+            this.x1wynik2a.Location = new System.Drawing.Point(411, 262);
+            this.x1wynik2a.Name = "x1wynik2a";
+            this.x1wynik2a.Size = new System.Drawing.Size(38, 13);
+            this.x1wynik2a.TabIndex = 43;
+            this.x1wynik2a.Text = "−b−√Δ";
+            // 
+            // x2wynik2a
+            // 
+            this.x2wynik2a.AutoSize = true;
+            this.x2wynik2a.Location = new System.Drawing.Point(409, 311);
+            this.x2wynik2a.Name = "x2wynik2a";
+            this.x2wynik2a.Size = new System.Drawing.Size(38, 13);
+            this.x2wynik2a.TabIndex = 46;
+            this.x2wynik2a.Text = "−b+√Δ";
+            // 
+            // x2wynik2c
+            // 
+            this.x2wynik2c.BackColor = System.Drawing.Color.Transparent;
+            this.x2wynik2c.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.x2wynik2c.Location = new System.Drawing.Point(409, 311);
+            this.x2wynik2c.Name = "x2wynik2c";
+            this.x2wynik2c.Size = new System.Drawing.Size(56, 18);
+            this.x2wynik2c.TabIndex = 45;
+            this.x2wynik2c.Text = "_______";
+            this.x2wynik2c.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // x2wynik2b
+            // 
+            this.x2wynik2b.AutoSize = true;
+            this.x2wynik2b.BackColor = System.Drawing.Color.Transparent;
+            this.x2wynik2b.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.x2wynik2b.Location = new System.Drawing.Point(409, 328);
+            this.x2wynik2b.Name = "x2wynik2b";
+            this.x2wynik2b.Size = new System.Drawing.Size(21, 15);
+            this.x2wynik2b.TabIndex = 44;
+            this.x2wynik2b.Text = "2a";
+            // 
             // delta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.x2wynik2a);
+            this.Controls.Add(this.x2wynik2c);
+            this.Controls.Add(this.x2wynik2b);
+            this.Controls.Add(this.x1wynik2a);
+            this.Controls.Add(this.x1wynik2c);
+            this.Controls.Add(this.x1wynik2b);
             this.Controls.Add(this.x2wynik);
             this.Controls.Add(this.x1wynik);
             this.Controls.Add(this.x2dwa);
@@ -491,5 +565,11 @@
         private System.Windows.Forms.Label x2dwa;
         private System.Windows.Forms.Label x1wynik;
         private System.Windows.Forms.Label x2wynik;
+        private System.Windows.Forms.Label x1wynik2c;
+        private System.Windows.Forms.Label x1wynik2b;
+        private System.Windows.Forms.Label x1wynik2a;
+        private System.Windows.Forms.Label x2wynik2a;
+        private System.Windows.Forms.Label x2wynik2c;
+        private System.Windows.Forms.Label x2wynik2b;
     }
 }
