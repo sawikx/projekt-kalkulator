@@ -36,6 +36,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.delta = new System.Windows.Forms.Button();
             this.wyjscie = new System.Windows.Forms.Button();
+            this.Wykresguzik = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -115,11 +117,32 @@
             this.wyjscie.UseVisualStyleBackColor = true;
             this.wyjscie.Click += new System.EventHandler(this.wyjscie_Click);
             // 
+            // Wykresguzik
+            // 
+            this.Wykresguzik.Location = new System.Drawing.Point(265, 180);
+            this.Wykresguzik.Name = "Wykresguzik";
+            this.Wykresguzik.Size = new System.Drawing.Size(75, 23);
+            this.Wykresguzik.TabIndex = 8;
+            this.Wykresguzik.Text = "Wykres";
+            this.Wykresguzik.UseVisualStyleBackColor = true;
+            this.Wykresguzik.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(243, 185);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(16, 13);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "4.";
+            // 
             // aplikacjimenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.Wykresguzik);
             this.Controls.Add(this.wyjscie);
             this.Controls.Add(this.delta);
             this.Controls.Add(this.label4);
@@ -145,5 +168,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button delta;
         private System.Windows.Forms.Button wyjscie;
+        private System.Windows.Forms.Button Wykresguzik;
+        private System.Windows.Forms.Label label5;
     }
 }

@@ -40,6 +40,10 @@ namespace projekt_kalkulator
         {
             Application.Run(new delta());
         }
+        private void Wykres(object obj)
+        {
+            Application.Run(new Wykresforma());
+        }
         private void Geometriapl_Click(object sender, EventArgs e)
         {
             Close();
@@ -59,6 +63,14 @@ namespace projekt_kalkulator
         private void wyjscie_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Close();
+            th = new Thread(Wykres);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
         }
     }
 }

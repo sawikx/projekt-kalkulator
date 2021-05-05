@@ -18,6 +18,8 @@ namespace projekt_kalkulator
             x1napis.Visible = false;
             x1początek.Visible = false;
             x1jeden.Visible = false;
+            x1początek2.Visible = false;
+            x1jeden2.Visible = false;
             x1guraliczby.Visible = false;
             x1dulliczby.Visible = false;
             x1kreska.Visible = false;
@@ -29,6 +31,8 @@ namespace projekt_kalkulator
             x2napis.Visible = false;
             x2poczatek.Visible = false;
             x2dwa.Visible = false;
+            x2poczatek2.Visible = false;            
+            x2dwa2.Visible = false;
             x2guraliczba.Visible = false;
             x2kreska.Visible = false;
             x2dulliczba.Visible = false;
@@ -117,11 +121,14 @@ namespace projekt_kalkulator
                         x1wynik2c.Visible = false;
                         x1wynik2b.Visible = false;
                         x1wynik.Text = "" + x1;
-
+                        x1początek2.Visible = true;
+                        x1jeden2.Visible = true;
                         x2wynik.Visible = true;
                         x2wynik2a.Visible = false;
                         x2wynik2c.Visible = false;
                         x2wynik2b.Visible = false;
+                        x2poczatek2.Visible = true;
+                        x2dwa2.Visible = true;
                         x2wynik.Text = "" + x2;
                     }
                     else
@@ -130,12 +137,16 @@ namespace projekt_kalkulator
                         x1wynik2a.Visible = true;
                         x1wynik2c.Visible = true;
                         x1wynik2b.Visible = true;
+                        x1początek2.Visible = true;
+                        x1jeden2.Visible = true;
                         x1wynik2a.Text = "-" + b + " - √" + deltaliczba ;
                         x1wynik2b.Text = "2a";
                         x2wynik.Visible = false;
                         x2wynik2a.Visible = true;
                         x2wynik2c.Visible = true;
                         x2wynik2b.Visible = true;
+                        x2poczatek2.Visible = true;
+                        x2dwa2.Visible = true;
                         x2wynik2a.Text = "-" + b + " + √" + deltaliczba;
                         x2wynik2b.Text = "2a";
                     }
@@ -150,6 +161,8 @@ namespace projekt_kalkulator
                     x1dulliczby.Visible = true;
                     x1kreska.Visible = true;
                     x1wynik.Visible = true;
+                    x1początek2.Visible = true;
+                    x1jeden2.Visible = true;
                     x1guraliczby.Text = "−b";
                     x1napis.Text = "x";
                     x1 = -b / (2 * a);
