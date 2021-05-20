@@ -4,4 +4,4 @@ So far it has:
 1. normal calculator
 2. Planar geometry (patterns)
 3. Delta (calculating)
-4. Analytical geometry (coming soon)
+4. Analytical geometry 
